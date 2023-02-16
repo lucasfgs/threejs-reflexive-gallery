@@ -54,17 +54,17 @@ export default function App() {
         <spotLight position={[0, 10, 0]} intensity={0.3} />
         <directionalLight position={[-50, 0, -40]} intensity={0.7} />
         <Intro />
+        <OrbitControls
+          enableDamping={enableDamping}
+          enableZoom={enableZoom}
+          dampingFactor={dampingFactor}
+          autoRotate={autoRotate}
+          autoRotateSpeed={autoRotateSpeed}
+          minPolarAngle={Math.PI / 2 - 0.5}
+          maxPolarAngle={Math.PI / 2 - 0.01}
+        />
+        <Stats />
       </Suspense>
-      <OrbitControls
-        enableDamping={enableDamping}
-        enableZoom={enableZoom}
-        dampingFactor={dampingFactor}
-        autoRotate={autoRotate}
-        autoRotateSpeed={autoRotateSpeed}
-        minPolarAngle={Math.PI / 2 - 0.5}
-        maxPolarAngle={Math.PI / 2 - 0.01}
-      />
-      <Stats />
     </Canvas>
   );
 }

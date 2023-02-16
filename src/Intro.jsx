@@ -7,7 +7,7 @@ export default function Intro() {
   const camera = useThree((state) => state.camera);
 
   return useFrame((state) => {
-    if (state.clock.elapsedTime > 1) return;
+    if (state.clock.elapsedTime > 2) return;
     camera.position.lerp(vec.set(5, 5, 10), 0.05);
     camera.lookAt(0, 0, 0);
   });
