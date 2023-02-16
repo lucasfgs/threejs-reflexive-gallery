@@ -33,7 +33,6 @@ export default function Gallery(props) {
               attach="map"
               args={[videos[0]]}
               encoding={THREE.sRGBEncoding}
-              flipY={false}
             />
           </meshBasicMaterial>
         </mesh>
@@ -43,7 +42,6 @@ export default function Gallery(props) {
               attach="map"
               args={[videos[1]]}
               encoding={THREE.sRGBEncoding}
-              flipY={false}
             />
           </meshBasicMaterial>
         </mesh>
@@ -53,7 +51,6 @@ export default function Gallery(props) {
               attach="map"
               args={[videos[2]]}
               encoding={THREE.sRGBEncoding}
-              flipY={false}
             />
           </meshBasicMaterial>
         </mesh>
@@ -63,7 +60,6 @@ export default function Gallery(props) {
               attach="map"
               args={[videos[3]]}
               encoding={THREE.sRGBEncoding}
-              flipY={false}
             />
           </meshBasicMaterial>
         </mesh>
@@ -73,7 +69,6 @@ export default function Gallery(props) {
               attach="map"
               args={[videos[4]]}
               encoding={THREE.sRGBEncoding}
-              flipY={false}
             />
           </meshBasicMaterial>
         </mesh>
